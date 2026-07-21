@@ -22,6 +22,14 @@ export const metadata: Metadata = {
   description:
     "Peringatan HUT Kemerdekaan Republik Indonesia ke-81 Tahun 2026. Blumbang RT 15, Desa Saren, Kec. Kalijambe, Kab. Sragen. Semangat Gotong Royong Lintas Generasi.",
   keywords: ["HUT RI 81", "Kemerdekaan", "Blumbang RT 15", "Saren", "Kalijambe", "Sragen", "Proposal", "Kegiatan"],
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon.png", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({
