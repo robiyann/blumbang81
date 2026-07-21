@@ -12,6 +12,8 @@ import { SectionHeader } from "@/components/shared/SectionHeader";
 import Link from "next/link";
 import Image from "next/image";
 
+import { getR2PublicUrl } from "@/lib/r2/client";
+
 import type { Announcement } from "@/types/announcement";
 
 export const revalidate = 300; // ISR every 5 minutes
@@ -30,9 +32,12 @@ export default async function HomePage() {
     announcements = fallbackAnnouncements.slice(0, 3);
   }
 
-  const flashbackImages = await getFeaturedFlashbackImages();
-  const photoWargaSrc = flashbackImages[0] || "/jalan.webp";
-  const photoPanitiaSrc = flashbackImages[1] || flashbackImages[0] || "/panitia.webp";
+  const photoWargaSrc =
+    getR2PublicUrl("jalan_sehat_2025/@redsphotoworks (183 of 1438).webp") ??
+    "https://pub-e995eda3078144f3bf885a07938cea6b.r2.dev/jalan_sehat_2025/%40redsphotoworks%20(183%20of%201438).webp";
+  const photoPanitiaSrc =
+    getR2PublicUrl("jalan_sehat_2025/@redsphotoworks (1435 of 1438).webp") ??
+    "https://pub-e995eda3078144f3bf885a07938cea6b.r2.dev/jalan_sehat_2025/%40redsphotoworks%20(1435%20of%201438).webp";
 
   return (
     <div className="flex flex-col w-full">
