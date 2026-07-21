@@ -53,6 +53,26 @@ export async function getGalleryAlbums(): Promise<GalleryAlbum[]> {
 }
 
 /**
+ * Get 2 featured approved images for the homepage flashback section.
+ */
+export async function getFeaturedFlashbackImages(): Promise<string[]> {
+  if (!db) return [];
+  try {
+    const rows = await db
+      .select({ r2Key: galleryImages.r2Key })
+      .from(galleryImages)
+      .where(eq(galleryImages.isApproved, true))
+      .orderBy(desc(galleryImages.uploadedAt))
+      .limit(2);
+
+    return rows.map((r) => resolveImageUrl(r.r2Key));
+  } catch (e) {
+    console.error("Error fetching flashback images:", e);
+    return [];
+  }
+}
+
+/**
  * Get paginated images for an album (approved only).
  */
 export async function getAlbumImages(

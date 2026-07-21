@@ -7,6 +7,7 @@ import { DonationCTA } from "@/components/home/DonationCTA";
 import { AnnouncementPreview } from "@/components/home/AnnouncementPreview";
 import CountdownTimer from "@/components/home/CountdownTimer";
 import { getLatestAnnouncements, fallbackAnnouncements } from "@/repositories/announcementRepository";
+import { getFeaturedFlashbackImages } from "@/repositories/galleryRepository";
 import { SectionHeader } from "@/components/shared/SectionHeader";
 import Link from "next/link";
 import Image from "next/image";
@@ -28,6 +29,10 @@ export default async function HomePage() {
   if (announcements.length === 0) {
     announcements = fallbackAnnouncements.slice(0, 3);
   }
+
+  const flashbackImages = await getFeaturedFlashbackImages();
+  const photoWargaSrc = flashbackImages[0] || "/foto-warga.jpg";
+  const photoPanitiaSrc = flashbackImages[1] || flashbackImages[0] || "/foto-panitia.jpg";
 
   return (
     <div className="flex flex-col w-full">
@@ -81,19 +86,29 @@ export default async function HomePage() {
             </Link>
           </div>
           <div className="md:w-2/3 relative h-[380px] w-full flex items-center justify-center">
-            {/* Mock layout representing overlapping photos from Stitch design */}
-            <div className="absolute top-0 right-0 w-2/3 h-52 md:h-64 bg-[#ebeef2] p-2 rounded-lg shadow-card border border-[#e5bdb8] rotate-2 z-10">
-              <div className="w-full h-full relative rounded overflow-hidden bg-zinc-300">
-                <div className="absolute inset-0 flex items-center justify-center text-xs text-[#5c403c] font-medium p-4 text-center">
-                  [Foto Keramaian Warga]
-                </div>
+            {/* Overlapping photos from R2 gallery or local fallback */}
+            <div className="absolute top-0 right-0 w-2/3 h-52 md:h-64 bg-[#ebeef2] p-2.5 rounded-2xl shadow-xl border border-[#e5bdb8] rotate-2 z-10 hover:rotate-0 transition-transform duration-300">
+              <div className="w-full h-full relative rounded-xl overflow-hidden bg-zinc-200">
+                <Image
+                  src={photoWargaSrc}
+                  alt="Kegiatan Keramaian Warga Blumbang"
+                  fill
+                  sizes="(max-width: 768px) 60vw, 40vw"
+                  className="object-cover"
+                  loading="lazy"
+                />
               </div>
             </div>
-            <div className="absolute bottom-0 left-0 w-2/3 h-52 md:h-64 bg-[#ebeef2] p-2 rounded-lg shadow-card border border-[#e5bdb8] -rotate-3 z-20">
-              <div className="w-full h-full relative rounded overflow-hidden bg-zinc-300">
-                <div className="absolute inset-0 flex items-center justify-center text-xs text-[#5c403c] font-medium p-4 text-center">
-                  [Foto Panitia HUT RI]
-                </div>
+            <div className="absolute bottom-0 left-0 w-2/3 h-52 md:h-64 bg-[#ebeef2] p-2.5 rounded-2xl shadow-xl border border-[#e5bdb8] -rotate-3 z-20 hover:rotate-0 transition-transform duration-300">
+              <div className="w-full h-full relative rounded-xl overflow-hidden bg-zinc-200">
+                <Image
+                  src={photoPanitiaSrc}
+                  alt="Dokumentasi Panitia HUT RI Blumbang"
+                  fill
+                  sizes="(max-width: 768px) 60vw, 40vw"
+                  className="object-cover"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
