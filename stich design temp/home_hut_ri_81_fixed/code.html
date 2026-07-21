@@ -1,0 +1,244 @@
+<!DOCTYPE html><html lang="id" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{try{
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#1a1c1c",
+                        "tertiary": "#505252",
+                        "surface-variant": "#e0e3e6",
+                        "secondary": "#5d5f5f",
+                        "secondary-fixed": "#e2e2e2",
+                        "tertiary-container": "#686a6a",
+                        "secondary-container": "#dfe0e0",
+                        "on-background": "#181c1f",
+                        "on-primary-container": "#ffe5e1",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#930006",
+                        "surface-dim": "#d7dade",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "outline-variant": "#e5bdb8",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#f7fafd",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#2d3134",
+                        "on-surface": "#181c1f",
+                        "on-secondary-fixed-variant": "#454747",
+                        "inverse-primary": "#ffb4aa",
+                        "surface-container": "#ebeef2",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#e5e8ec",
+                        "background": "#f7fafd",
+                        "primary-container": "#ce201c",
+                        "surface": "#f7fafd",
+                        "on-secondary-container": "#616363",
+                        "primary-fixed": "#ffdad5",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "primary": "#a70009",
+                        "surface-container-low": "#f1f4f8",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#e2e2e2",
+                        "inverse-on-surface": "#eef1f5",
+                        "on-tertiary-container": "#eaebeb",
+                        "primary-fixed-dim": "#ffb4aa",
+                        "outline": "#916f6b",
+                        "surface-tint": "#bd0f12",
+                        "surface-container-highest": "#e0e3e6",
+                        "on-surface-variant": "#5c403c",
+                        "on-primary-fixed": "#410001",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "margin-desktop": "80px",
+                        "gutter": "24px",
+                        "component-padding": "1.5rem",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "label-sm": ["JetBrains Mono"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }]
+                    }
+                }
+            }
+        }
+    }catch(_e){}}catch(_e){}</script></head><body class="text-on-background font-body-md overflow-x-hidden pt-20">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop bg-surface/95 backdrop-blur-sm border-b-4 border-primary h-20 shadow-sm">
+<div class="font-headline-md text-headline-md font-bold text-primary">HUT RI 81</div>
+<div class="hidden md:flex space-x-8">
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors pb-1" href="#">Jadwal</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors pb-1" href="#">Finance</a>
+</div>
+<button class="bg-primary text-on-primary font-label-sm text-label-sm px-4 py-2 rounded-DEFAULT hover:bg-on-primary-fixed-variant transition-colors cursor-pointer active:scale-95">Donasi Sekarang</button>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-[819px] flex flex-col justify-center items-center text-center px-margin-mobile md:px-margin-desktop py-section-gap bg-cover bg-center" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuABARU3M6j5pjLemEyAWaGFZDf5Q6wuIm0b4W_ogj4S0o9dgp4j9b2ESA2OWfmOKZa78wgOu24zSLg-FAuoy4rtm7WHgoAvZMm0V_kl9ZVfFowRCSGo_aUAj5SQwL5HE8LLYeM5VIh50OF0SjgaLS15oCyV2OlHReNs-6cb7v6zb8v_V0lzl6aSM5m3mHb5EdixEsq2OW15uDMaLPOmBJkayFjQ1V6cosPlnE-rkH3xQVRBwdSJivS8RGlppnFxpmTKXAoeaDI5Bey-1A&quot;);">
+<div class="absolute inset-0 bg-black/60 z-0"></div>
+<div class="umbul-umbul-top z-10 relative"></div>
+<div class="max-w-4xl mx-auto z-10 relative">
+<h2 class="font-label-sm text-label-sm text-on-primary uppercase tracking-widest mb-4">Proposal Kegiatan</h2>
+<h1 class="font-headline-xl text-headline-xl text-on-primary mb-6">Peringatan HUT Kemerdekaan RI ke-81</h1>
+<div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+<p class="font-body-lg text-body-lg text-on-primary mb-8">Blumbang RT 15, Desa Saren, Kec. Kalijambe, Kab. Sragen</p>
+<a href="jadwal.html#payment-details" class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary font-label-sm text-label-sm px-8 py-4 rounded-full hover:bg-on-primary-fixed-variant transition-colors cursor-pointer shadow-lg active:scale-95">
+<span class="material-symbols-outlined text-xl">volunteer_activism</span> Dukung Acara
+</a>
+</div>
+<!-- Decorative elements -->
+<div class="absolute top-1/4 left-10 md:left-20 opacity-20 transform -rotate-12 z-10"><span class="material-symbols-outlined text-9xl text-on-primary">flag_circle</span></div>
+<div class="absolute bottom-1/4 right-10 md:right-20 opacity-20 transform rotate-12 z-10"><span class="material-symbols-outlined text-9xl text-on-primary">celebration</span></div>
+</section>
+<!-- Vision Statement -->
+<section class="bg-primary-container text-on-primary-container py-section-gap px-margin-mobile md:px-margin-desktop relative overflow-hidden">
+<div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-8xl text-surface/20 absolute -top-10 -left-10">format_quote</span>
+<h2 class="font-headline-lg text-headline-lg font-bold mb-6 relative z-10">Kemerdekaan adalah momentum.</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container/90 border-l-4 border-surface pl-4">
+                    Merayakan 81 tahun kemerdekaan Republik Indonesia bukan sekadar seremoni. Ini adalah wujud syukur dan penghormatan kepada pahlawan melalui aksi nyata: melestarikan kerukunan antar warga.
+                </p>
+</div>
+<div class="bg-surface text-on-surface p-8 rounded-lg card-shadow border-t-4 border-primary z-10">
+<p class="font-body-md text-body-md font-bold">
+                    Panitia HUT RI ke-81 Blumbang RT 15 siap menghadirkan rangkaian acara yang positif, membahagiakan, dan menyatukan seluruh elemen warga.
+                </p>
+</div>
+</div>
+</section>
+<!-- Three Pillars -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-4">Tiga Pilar Utama Perayaan Kemerdekaan</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+<!-- Pillar 1 -->
+<div class="bg-surface p-8 rounded-lg card-shadow border border-surface-variant border-t-4 border-t-primary text-center hover:-translate-y-2 transition-transform duration-300">
+<div class="w-20 h-20 mx-auto bg-primary-fixed rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-4xl text-primary">volunteer_activism</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4">Mensyukuri Kemerdekaan</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Wujud rasa syukur kepada Tuhan YME atas nikmat kemerdekaan sejak 17 Agustus 1945.</p>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface p-8 rounded-lg card-shadow border border-surface-variant border-t-4 border-t-primary text-center hover:-translate-y-2 transition-transform duration-300">
+<div class="w-20 h-20 mx-auto bg-primary-fixed rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-4xl text-primary">handshake</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4">Mempererat Silaturahmi</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Mengukuhkan persatuan dan menghidupkan kembali semangat gotong royong antar warga Blumbang RT 15.</p>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface p-8 rounded-lg card-shadow border border-surface-variant border-t-4 border-t-primary text-center hover:-translate-y-2 transition-transform duration-300">
+<div class="w-20 h-20 mx-auto bg-primary-fixed rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-4xl text-primary">local_fire_department</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4">Menumbuhkan Sportivitas</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Membangun kreativitas, semangat kebangsaan, dan solidaritas untuk menghadapi tantangan global.</p>
+</div>
+</div>
+</section>
+<!-- Theme Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface relative">
+<div class="max-w-6xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-center mb-16">Ruang Gembira untuk Seluruh Lapisan Warga</h2>
+<div class="relative flex flex-col md:flex-row items-center justify-center gap-12 md:gap-0">
+<!-- Center Hub -->
+<div class="md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 z-10">
+<div class="w-64 h-64 bg-surface rounded-full border-8 border-primary flex flex-col items-center justify-center p-6 text-center shadow-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant mb-2">TEMA KEGIATAN:</span>
+<h3 class="font-headline-md text-headline-md text-primary leading-tight">"Semangat Gotong-royong Lintas Generasi"</h3>
+</div>
+</div>
+<!-- Lines (Desktop only) -->
+<div class="hidden md:block absolute top-1/2 left-1/4 right-1/4 h-1 bg-surface-variant z-0 transform -translate-y-1/2"></div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-64 w-full relative z-10">
+<!-- Target 1 -->
+<div class="flex items-center gap-4 bg-surface-container-lowest p-4 rounded-lg card-shadow md:justify-self-end">
+<div class="w-16 h-16 bg-surface-container rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">child_care</span>
+</div>
+<div>
+<h4 class="font-bold">Balita &amp; Anak-anak</h4>
+<p class="text-sm text-on-surface-variant">(Membangun keberanian)</p>
+</div>
+</div>
+<!-- Target-->
+<div class="flex items-center gap-4 bg-surface-container-lowest p-4 rounded-lg card-shadow md:justify-self-start">
+<div class="w-16 h-16 bg-surface-container rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">groups</span>
+</div>
+<div>
+<h4 class="font-bold">Pemuda &amp; Pemudi</h4>
+<p class="text-sm text-on-surface-variant">(Katalisator energi)</p>
+</div>
+</div>
+<!-- Target 3 -->
+<div class="flex items-center gap-4 bg-surface-container-lowest p-4 rounded-lg card-shadow md:justify-self-end mt-12 md:mt-32">
+<div class="w-16 h-16 bg-surface-container rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">family_restroom</span>
+</div>
+<div>
+<h4 class="font-bold">Bapak-bapak &amp; Ibu-ibu</h4>
+<p class="text-sm text-on-surface-variant">(Menjaga kekompakan)</p>
+</div>
+</div>
+<!-- Target 4 -->
+<div class="flex items-center gap-4 bg-surface-container-lowest p-4 rounded-lg card-shadow md:justify-self-start mt-12 md:mt-32">
+<div class="w-16 h-16 bg-surface-container rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">elderly</span>
+</div>
+<div>
+<h4 class="font-bold">Sesepuh &amp; Lansia</h4>
+<p class="text-sm text-on-surface-variant">(Menyaksikan kerukunan)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-16 text-center bg-surface-container-low p-6 rounded-lg max-w-3xl mx-auto">
+<p class="font-body-md text-body-md">Sasaran utama kegiatan adalah seluruh warga masyarakat Blumbang RT 15 tanpa terkecuali. Semua memiliki ruang untuk berpartisipasi.</p>
+</div>
+</div>
+</section>
+<!-- Flashback -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest overflow-hidden relative">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/3">
+<h2 class="font-headline-lg text-headline-lg mb-6">Kilas Balik Semarak Kemerdekaan</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                    Antusiasme dan partisipasi luar biasa dari warga Blumbang RT 15 pada penyelenggaraan tahun-tahun sebelumnya menjadi pondasi optimisme dan standar kualitas kami untuk perayaan tahun ini.
+                </p>
+</div>
+<div class="md:w-2/3 relative h-[500px] w-full">
+<!-- Image 1 -->
+<div class="absolute top-0 right-0 w-2/3 h-64 bg-surface-container p-2 rounded-lg card-shadow transform rotate-2 z-10">
+<div class="w-full h-full bg-cover bg-center rounded" data-alt="A festive nighttime community gathering in an open field, illuminated by string lights. People of all ages are gathered, some sitting on red plastic chairs, others standing and socializing. A makeshift stage area is visible in the background with red and white decorations, capturing a lively and communal celebration in a rural Indonesian setting." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBJ99koNFl_fGidP3xSXYnzxDfCTiVo8ByLEmJ9F0rSlnbDweBUiOcCvpk454J2tyxKTNvEN8uYqQp8ydMBhrSRWhf52a6-vBJxgtTC_kItWutHic5hdBYSYtyw_WIxC-Svp1YQSLt2iqdpHXonaj9W2r6bYYejROE7Mg8HM1dMXLHHjc-ucoo2-OqPI9hE33w8RSW5GYorBUMZfAV7uJurydsnclDNYOKMI5ycGgvk_kXcIGe5qBv_9HPATVq3Rqb_wbYtAt5FqcI&quot;);"></div>
+<p class="text-xs text-center mt-2 font-label-sm text-on-surface-variant">Keramaian dan partisipasi aktif warga.</p>
+</div>
+<!-- Image 2 -->
+<div class="absolute bottom-0 left-0 w-2/3 h-64 bg-surface-container p-2 rounded-lg card-shadow transform -rotate-3 z-20">
+<div class="w-full h-full bg-cover bg-center rounded" data-alt="A large group of young adults posing together on a stage under a yellow and green tent. They are all wearing identical bright red t-shirts. They look happy and energetic, forming a cohesive committee group shot during a daytime event, conveying a strong sense of teamwork and community spirit." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCxzFHM4TCay0hRxBShQlJJ6Y5Im5nbPm2gDNDAShIm6K0qmRsSgTBk49LyZoZFgVPkao2X3rmAVukrGJ8d8JGv5VfH-AmCC7ES0ShocAUlqbDaaTCUDOj4oVgf16dqAdYcq9PnwBaVFB-0i2_7MYaFJ3Xm3xSXxT0tH0L_pKKbmq8YCmDXqX2Zu2tXpQuMEKenKGdIprzEOwjo-gsMGG79oJevIintTBo-5YZ1LDJ_2uCCDXPFAHTB2cwc1vgwgwq4CfYCEanNk18&quot;);"></div>
+</div></div></div></section></body></html>

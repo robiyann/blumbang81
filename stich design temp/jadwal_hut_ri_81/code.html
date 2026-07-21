@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Jadwal - HUT RI 81</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#1a1c1c",
+                        "tertiary": "#505252",
+                        "surface-variant": "#e0e3e6",
+                        "secondary": "#5d5f5f",
+                        "secondary-fixed": "#e2e2e2",
+                        "tertiary-container": "#686a6a",
+                        "secondary-container": "#dfe0e0",
+                        "on-background": "#181c1f",
+                        "on-primary-container": "#ffe5e1",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#930006",
+                        "surface-dim": "#d7dade",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "outline-variant": "#e5bdb8",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#f7fafd",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#2d3134",
+                        "on-surface": "#181c1f",
+                        "on-secondary-fixed-variant": "#454747",
+                        "inverse-primary": "#ffb4aa",
+                        "surface-container": "#ebeef2",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#e5e8ec",
+                        "background": "#f7fafd",
+                        "primary-container": "#ce201c",
+                        "surface": "#f7fafd",
+                        "on-secondary-container": "#616363",
+                        "primary-fixed": "#ffdad5",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "primary": "#a70009",
+                        "surface-container-low": "#f1f4f8",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#e2e2e2",
+                        "inverse-on-surface": "#eef1f5",
+                        "on-tertiary-container": "#eaebeb",
+                        "primary-fixed-dim": "#ffb4aa",
+                        "outline": "#916f6b",
+                        "surface-tint": "#bd0f12",
+                        "surface-container-highest": "#e0e3e6",
+                        "on-surface-variant": "#5c403c",
+                        "on-primary-fixed": "#410001",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "margin-desktop": "80px",
+                        "gutter": "24px",
+                        "component-padding": "1.5rem",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "label-sm": ["JetBrains Mono"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #F4F4F4;
+            background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noiseFilter)" opacity="0.05"/></svg>');
+        }
+        .umbul-umbul-top {
+            background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 20" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 10,20 20,0 30,20 40,0 50,20 60,0 70,20 80,0 90,20 100,0" fill="%23ce201c"/></svg>');
+            height: 20px;
+            width: 100%;
+        }
+        .bento-card {
+            background: white;
+            border: 1px solid #e0e3e6;
+            border-top: 4px solid #a70009;
+            box-shadow: 0 4px 6px -1px rgba(24, 28, 31, 0.1);
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-background antialiased pt-[80px]">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-inverse-surface w-full top-0 border-b-4 border-primary dark:border-primary-container shadow-sm dark:shadow-none fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 bg-surface/95 backdrop-blur-sm">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim">
+            HUT RI 81
+        </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md text-body-md hover:text-primary dark:hover:text-primary-fixed transition-colors cursor-pointer active:scale-95 transition-transform" href="#">Home</a>
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary font-body-md text-body-md hover:text-primary dark:hover:text-primary-fixed transition-colors cursor-pointer active:scale-95 transition-transform" href="#">Jadwal</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md text-body-md hover:text-primary dark:hover:text-primary-fixed transition-colors cursor-pointer active:scale-95 transition-transform" href="#">Finance</a>
+</div>
+<button class="bg-primary text-on-primary font-body-md text-body-md font-bold px-6 py-2 rounded border border-transparent hover:bg-primary-container transition-colors cursor-pointer active:scale-95">
+            Donasi Sekarang
+        </button>
+</nav>
+<!-- Main Content Container -->
+<main class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-12 space-y-section-gap">
+<!-- Header Section -->
+<section class="text-center">
+<h1 class="font-headline-xl text-headline-xl text-on-background mb-4">Linimasa Perayaan HUT RI ke-81</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto">Rangkaian kegiatan semarak kemerdekaan yang disusun untuk mempererat tali persaudaraan dan gotong royong.</p>
+</section>
+<!-- 1. Timeline Section -->
+<section class="relative py-12">
+<div class="absolute inset-0 w-full h-1 bg-tertiary top-1/2 transform -translate-y-1/2"></div>
+<div class="relative grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Timeline Item 1 -->
+<div class="flex flex-col items-center">
+<div class="text-center mb-6">
+<h3 class="font-headline-md text-headline-md text-primary">1-2 Agustus 2026</h3>
+<p class="font-label-sm text-label-sm text-secondary">(Pkl 15.00)</p>
+</div>
+<div class="w-8 h-8 bg-tertiary rounded-full border-4 border-white z-10 shadow-md"></div>
+<div class="mt-6 bento-card p-6 w-full text-center rounded-lg">
+<p class="font-body-lg text-body-lg font-bold">Pekan Lomba<br/>Anak-Anak</p>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="flex flex-col items-center">
+<div class="text-center mb-6">
+<h3 class="font-headline-md text-headline-md text-primary">3-10 Agustus 2026</h3>
+<p class="font-label-sm text-label-sm text-secondary">(Pkl 19.00)</p>
+</div>
+<div class="w-8 h-8 bg-tertiary rounded-full border-4 border-white z-10 shadow-md"></div>
+<div class="mt-6 bento-card p-6 w-full text-center rounded-lg">
+<p class="font-body-lg text-body-lg font-bold">Pekan Lomba Dewasa<br/>(Bapak &amp; Ibu)</p>
+</div>
+</div>
+<!-- Timeline Item 3 (Peak) -->
+<div class="flex flex-col items-center">
+<div class="text-center mb-6">
+<h3 class="font-headline-md text-headline-md text-primary">Minggu, 16 Agustus 2026</h3>
+<p class="font-label-sm text-label-sm text-secondary">(Pkl 06.00)</p>
+</div>
+<div class="w-12 h-12 bg-primary rounded-full border-4 border-white z-10 shadow-lg relative">
+<div class="absolute inset-0 bg-primary rounded-full animate-ping opacity-20"></div>
+</div>
+<div class="mt-6 bento-card p-6 w-full text-center rounded-lg border-2 border-primary">
+<p class="font-body-lg text-body-lg font-bold text-primary">Puncak Acara:<br/>Jalan Sehat Bersama</p>
+</div>
+</div>
+</div>
+<div class="mt-12 flex justify-center">
+<div class="bg-surface-container-high px-6 py-3 rounded-full flex items-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-primary" data-icon="location_on" data-weight="fill" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span class="font-label-sm text-label-sm text-on-surface">Lokasi Sentral Seluruh Kegiatan: Pekarangan Bapak Sugiyanto</span>
+</div>
+</div>
+</section>
+<!-- 2. Children's Competitions Bento -->
+<section class="space-y-8">
+<div class="border-l-4 border-primary pl-4">
+<h2 class="font-headline-lg text-headline-lg text-on-background">Rangkaian Perlombaan: Menumbuhkan Semangat Juang Sejak Dini</h2>
+<p class="font-body-md text-body-md text-secondary">Pelaksanaan: Sabtu-Minggu, 1-2 Agustus 2026</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- PAUD -->
+<div class="bento-card p-6 rounded-lg relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-6xl text-primary" data-icon="child_care">child_care</span>
+</div>
+<h3 class="font-label-sm text-label-sm text-primary mb-2">PAUD / Balita</h3>
+<h4 class="font-headline-md text-headline-md text-on-background mb-1">Makan Kerupuk</h4>
+<p class="font-body-md text-body-md text-secondary">(Melatih kemandirian dasar)</p>
+</div>
+<!-- TK -->
+<div class="bento-card p-6 rounded-lg relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-6xl text-primary" data-icon="toys">toys</span>
+</div>
+<h3 class="font-label-sm text-label-sm text-primary mb-2">TK 5-7 Tahun</h3>
+<h4 class="font-headline-md text-headline-md text-on-background mb-1">Kuk Geruk</h4>
+<p class="font-body-md text-body-md text-secondary">(Melatih ketangkasan sensorik)</p>
+</div>
+<!-- SD 1-3 -->
+<div class="bento-card p-6 rounded-lg relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-6xl text-primary" data-icon="group">group</span>
+</div>
+<h3 class="font-label-sm text-label-sm text-primary mb-2">SD Kelas 1-3</h3>
+<h4 class="font-headline-md text-headline-md text-on-background mb-1">Estafet Karet</h4>
+<p class="font-body-md text-body-md text-secondary">(Melatih kerja sama tim kecil)</p>
+</div>
+<!-- SD 4-6 & SMP -->
+<div class="bento-card p-6 rounded-lg relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-6xl text-primary" data-icon="sports_score">sports_score</span>
+</div>
+<h3 class="font-label-sm text-label-sm text-primary mb-2">SD Kelas 4-6 &amp; SMP</h3>
+<h4 class="font-headline-md text-headline-md text-on-background mb-1">Pukul Air &amp; Balap Karung</h4>
+<p class="font-body-md text-body-md text-secondary">(Melatih daya juang dan sportivitas)</p>
+</div>
+</div>
+</section>
+<!-- 3. Adult's Competitions Split Layout -->
+<section class="space-y-8">
+<div class="border-l-4 border-primary pl-4">
+<h2 class="font-headline-lg text-headline-lg text-on-background">Rangkaian Perlombaan: Merajut Kekompakan Warga Dewasa</h2>
+<p class="font-body-md text-body-md text-secondary">Pelaksanaan: 3-10 Agustus 2026 (Malam hari, Pkl 19.00 WIB)</p>
+</div>
+<div class="flex flex-col md:flex-row gap-8">
+<!-- Ibu-ibu -->
+<div class="flex-1 space-y-6">
+<h3 class="font-headline-md text-headline-md text-primary text-center pb-4 border-b-2 border-primary-container">Lomba Ibu-Ibu &amp; Pemudi</h3>
+<div class="bento-card p-6 rounded-lg bg-gradient-to-br from-surface to-surface-container">
+<h4 class="font-label-sm text-label-sm text-secondary mb-1">Kategori Individu:</h4>
+<p class="font-body-lg text-body-lg text-on-background font-bold">Mengisi Air Pakai Tonrong</p>
+</div>
+<div class="bento-card p-6 rounded-lg bg-gradient-to-br from-surface to-surface-container">
+<h4 class="font-label-sm text-label-sm text-secondary mb-1">Kategori Kelompok:</h4>
+<p class="font-body-lg text-body-lg text-on-background font-bold">Voli Pakai Sarung</p>
+</div>
+</div>
+<!-- Divider -->
+<div class="hidden md:block w-px bg-surface-variant"></div>
+<!-- Bapak-bapak -->
+<div class="flex-1 space-y-6">
+<h3 class="font-headline-md text-headline-md text-on-background text-center pb-4 border-b-2 border-surface-variant">Lomba Bapak-Bapak &amp; Pemuda</h3>
+<div class="bento-card p-6 rounded-lg bg-gradient-to-br from-surface to-surface-container-high">
+<h4 class="font-label-sm text-label-sm text-secondary mb-1">Kategori Individu:</h4>
+<p class="font-body-lg text-body-lg text-on-background font-bold">Menggiring Bola Pakai Contong</p>
+</div>
+<div class="bento-card p-6 rounded-lg bg-gradient-to-br from-surface to-surface-container-high">
+<h4 class="font-label-sm text-label-sm text-secondary mb-1">Kategori Kelompok:</h4>
+<p class="font-body-lg text-body-lg text-on-background font-bold">Voli Net Terpal</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Peak Event Card -->
+<section class="bento-card rounded-xl overflow-hidden relative border-none bg-surface shadow-md">
+<div class="umbul-umbul-top absolute top-0 left-0"></div>
+<div class="p-8 md:p-12 mt-4 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+<div class="space-y-6">
+<div>
+<h2 class="font-headline-xl text-headline-xl text-on-background leading-tight">Puncak Keriaan Kemerdekaan:<br/><span class="text-primary">Jalan Sehat Bersama</span></h2>
+</div>
+<p class="font-body-lg text-body-lg text-secondary">
+                        Menyusuri rute lingkungan desa, menyatukan seluruh generasi Blumbang RT 15 dalam satu barisan kemerdekaan yang rukun dan sehat.
+                    </p>
+<div class="bg-primary-container/10 p-6 rounded-lg border-l-4 border-primary">
+<ul class="space-y-4">
+<li class="flex items-center gap-4">
+<span class="font-label-sm text-label-sm font-bold w-24">Hari, Tanggal:</span>
+<span class="font-body-md text-body-md text-on-background">Minggu, 16 Agustus 2026</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="font-label-sm text-label-sm font-bold w-24">Waktu:</span>
+<span class="font-body-md text-body-md text-on-background">06.00 WIB – Selesai</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="font-label-sm text-label-sm font-bold w-24">Tempat:</span>
+<span class="font-body-md text-body-md text-on-background">Pekarangan Bapak Sugiyanto</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="bg-primary text-on-primary p-8 rounded-xl flex flex-col items-center justify-center text-center shadow-lg transform lg:rotate-3 hover:rotate-0 transition-transform duration-300">
+<span class="material-symbols-outlined text-6xl mb-4" data-icon="redeem" data-weight="fill" style="font-variation-settings: 'FILL' 1;">redeem</span>
+<h3 class="font-headline-xl text-headline-xl font-extrabold uppercase tracking-tight mb-2 text-white drop-shadow-md">DOORPRIZE<br/>MENARIK!</h3>
+<p class="font-body-md text-body-md text-primary-fixed-dim italic mt-4">
+                        (Diundi di akhir acara untuk seluruh warga masyarakat Blumbang RT 15).
+                    </p>
+</div>
+</div>
+</section>
+<!-- 5. Committee Structure (Simplified Grid) -->
+<section class="space-y-8 mb-section-gap">
+<h2 class="font-headline-xl text-headline-xl text-center text-on-background">SUSUNAN PANITIA</h2>
+<div class="flex flex-col items-center gap-6">
+<!-- Ketua RT -->
+<div class="bg-primary text-on-primary px-8 py-4 rounded-lg shadow-md font-headline-md text-headline-md w-full max-w-md text-center">
+                    Ketua RT 15: MUH BASARI
+                </div>
+<div class="w-px h-8 bg-tertiary"></div>
+<!-- Core Team -->
+<div class="flex flex-wrap justify-center gap-4 w-full">
+<div class="bg-surface-variant text-on-surface px-6 py-4 rounded-lg shadow-sm font-body-md text-body-md font-bold text-center flex-1 min-w-[250px] border border-outline-variant">
+                        Ketua Panitia:<br/>DIDIK - FARIH - GIYANTI
+                    </div>
+<div class="bg-surface-variant text-on-surface px-6 py-4 rounded-lg shadow-sm font-body-md text-body-md font-bold text-center flex-1 min-w-[250px] border border-outline-variant">
+                        Sekretaris:<br/>MEITHA - ROBBI
+                    </div>
+<div class="bg-surface-variant text-on-surface px-6 py-4 rounded-lg shadow-sm font-body-md text-body-md font-bold text-center flex-1 min-w-[250px] border border-outline-variant">
+                        Bendahara:<br/>ENDAH - JAMIL
+                    </div>
+</div>
+<div class="w-full h-px bg-tertiary my-4 relative">
+<div class="absolute left-1/2 transform -translate-x-1/2 -top-4 w-px h-8 bg-tertiary"></div>
+</div>
+<!-- Sections -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 w-full">
+<!-- Seksi Perlombaan -->
+<div class="bg-surface p-4 rounded-lg border border-surface-variant flex flex-col">
+<h4 class="font-label-sm text-label-sm font-bold text-center bg-surface-container py-2 rounded mb-4">Seksi Perlombaan</h4>
+<ul class="font-body-md text-body-md text-center text-secondary text-sm space-y-1">
+<li>DANIF (Anak)</li><li>BAYU (Anak)</li><li>TIA (Anak)</li><li>RISMA (Anak)</li>
+<li>WISNU (Ibu)</li><li>DANI (Ibu)</li><li>SALMA (Ibu)</li><li>SITI (Ibu)</li>
+<li>FARHAN (Bapak)</li><li>NABILA (Bapak)</li><li>BAYU S (Bapak)</li><li>AULIA (Bapak)</li>
+</ul>
+</div>
+<!-- Seksi Perlengkapan -->
+<div class="bg-surface p-4 rounded-lg border border-surface-variant flex flex-col">
+<h4 class="font-label-sm text-label-sm font-bold text-center bg-surface-container py-2 rounded mb-4">Seksi Perlengkapan</h4>
+<ul class="font-body-md text-body-md text-center text-secondary text-sm space-y-1">
+<li>SAPAK</li><li>ALIN</li><li>ZOGA</li><li>WAFIQ</li><li>ZALFA</li><li>SAID</li><li>ARIF</li>
+</ul>
+</div>
+<!-- Seksi Konsumsi -->
+<div class="bg-surface p-4 rounded-lg border border-surface-variant flex flex-col">
+<h4 class="font-label-sm text-label-sm font-bold text-center bg-surface-container py-2 rounded mb-4">Seksi Konsumsi</h4>
+<ul class="font-body-md text-body-md text-center text-secondary text-sm space-y-1">
+<li>ISNANTO</li><li>FARUQ</li><li>FELANO</li><li>ASYIFA</li><li>RARA</li><li>KHOLIS</li><li>ZIMI</li>
+</ul>
+</div>
+<!-- Seksi Dana -->
+<div class="bg-surface p-4 rounded-lg border border-surface-variant flex flex-col">
+<h4 class="font-label-sm text-label-sm font-bold text-center bg-surface-container py-2 rounded mb-4">Seksi Dana</h4>
+<ul class="font-body-md text-body-md text-center text-secondary text-sm space-y-1">
+<li>TRIYANTO</li><li>SUGIYANTO</li><li>NITA</li>
+</ul>
+</div>
+<!-- Seksi Keamanan -->
+<div class="bg-surface p-4 rounded-lg border border-surface-variant flex flex-col">
+<h4 class="font-label-sm text-label-sm font-bold text-center bg-surface-container py-2 rounded mb-4">Seksi Keamanan</h4>
+<ul class="font-body-md text-body-md text-center text-secondary text-sm space-y-1">
+<li>FERI</li><li>VANDI</li><li>AHMAT</li><li>BAYU ANDRI</li><li>DAFFA</li>
+</ul>
+</div>
+<!-- Seksi Humas -->
+<div class="bg-surface p-4 rounded-lg border border-surface-variant flex flex-col">
+<h4 class="font-label-sm text-label-sm font-bold text-center bg-surface-container py-2 rounded mb-4">Seksi Humas</h4>
+<ul class="font-body-md text-body-md text-center text-secondary text-sm space-y-1">
+<li>KRISNA</li><li>SUFYAN</li><li>YAYUK</li><li>NURUL</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-on-background dark:bg-surface-container-lowest w-full py-12 flex flex-col items-center justify-center space-y-8 px-margin-desktop text-center mt-section-gap">
+<div class="font-headline-sm text-headline-sm text-primary">
+            HUT RI 81
+        </div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm hover:text-primary-fixed-dim dark:hover:text-primary underline transition-all duration-300" href="#">Kontak Panitia</a>
+<a class="text-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm hover:text-primary-fixed-dim dark:hover:text-primary underline transition-all duration-300" href="#">Dokumentasi</a>
+<a class="text-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm hover:text-primary-fixed-dim dark:hover:text-primary underline transition-all duration-300" href="#">Syarat &amp; Ketentuan</a>
+<a class="text-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm hover:text-primary-fixed-dim dark:hover:text-primary underline transition-all duration-300" href="#">Kebijakan Privasi</a>
+</div>
+<div class="text-on-primary dark:text-on-surface font-label-sm text-label-sm opacity-80">
+            © 2026 Panitia HUT RI ke-81. Semangat Gotong Royong.
+        </div>
+</footer>
+</body></html>

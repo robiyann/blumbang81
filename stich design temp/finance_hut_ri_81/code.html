@@ -1,0 +1,254 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#1a1c1c",
+                        "tertiary": "#505252",
+                        "surface-variant": "#e0e3e6",
+                        "secondary": "#5d5f5f",
+                        "secondary-fixed": "#e2e2e2",
+                        "tertiary-container": "#686a6a",
+                        "secondary-container": "#dfe0e0",
+                        "on-background": "#181c1f",
+                        "on-primary-container": "#ffe5e1",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#930006",
+                        "surface-dim": "#d7dade",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "outline-variant": "#e5bdb8",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#f7fafd",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#2d3134",
+                        "on-surface": "#181c1f",
+                        "on-secondary-fixed-variant": "#454747",
+                        "inverse-primary": "#ffb4aa",
+                        "surface-container": "#ebeef2",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#e5e8ec",
+                        "background": "#f7fafd",
+                        "primary-container": "#ce201c",
+                        "surface": "#f7fafd",
+                        "on-secondary-container": "#616363",
+                        "primary-fixed": "#ffdad5",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "primary": "#a70009",
+                        "surface-container-low": "#f1f4f8",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#e2e2e2",
+                        "inverse-on-surface": "#eef1f5",
+                        "on-tertiary-container": "#eaebeb",
+                        "primary-fixed-dim": "#ffb4aa",
+                        "outline": "#916f6b",
+                        "surface-tint": "#bd0f12",
+                        "surface-container-highest": "#e0e3e6",
+                        "on-surface-variant": "#5c403c",
+                        "on-primary-fixed": "#410001",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "margin-desktop": "80px",
+                        "gutter": "24px",
+                        "component-padding": "1.5rem",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "label-sm": ["JetBrains Mono"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }]
+                    }
+                }
+            }
+        }
+    }catch(_e){}</script></head><body class="font-body-md text-on-background min-h-screen flex flex-col pt-20">
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop bg-surface/95 backdrop-blur-sm border-b-4 border-primary h-20 shadow-sm transition-all duration-300">
+        <div class="font-headline-md text-headline-md font-bold text-primary">
+            HUT RI 81
+        </div>
+        <div class="hidden md:flex space-x-8 items-center h-full">
+            <a href="#" class="h-full flex items-center text-on-surface-variant hover:text-primary transition-colors cursor-pointer font-body-md text-body-md">Home</a>
+            <a href="#" class="h-full flex items-center text-on-surface-variant hover:text-primary transition-colors cursor-pointer font-body-md text-body-md">Jadwal</a>
+            <a href="#" class="h-full flex items-center text-primary font-bold border-b-2 border-primary cursor-pointer active:scale-95 transition-transform font-body-md text-body-md">Finance</a>
+        </div>
+        <button class="bg-primary text-on-primary font-body-md text-body-md font-bold py-2 px-4 rounded hover:bg-primary-container active:scale-95 transition-all">
+            Donasi Sekarang
+        </button>
+    </nav>
+
+    <main class="flex-grow flex flex-col items-center w-full pb-section-gap">
+        
+        <!-- Budget Overview Section -->
+        <section class="w-full max-w-7xl px-margin-mobile md:px-margin-desktop mt-section-gap">
+            <div class="text-center mb-12 relative">
+                <!-- Abstract Umbul-umbul accent -->
+                <div class="absolute -top-12 left-0 right-0 h-4 bg-gradient-to-r from-transparent via-primary to-transparent opacity-20"></div>
+                
+                <h1 class="font-headline-xl text-headline-xl text-on-background mb-4">Rencana Anggaran Biaya</h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant">(Investasi Komunitas)</p>
+            </div>
+
+            <div class="bg-surface-container-lowest rounded-xl shadow-sm border border-surface-variant p-8 md:p-12 relative overflow-hidden">
+                <!-- Card Top Accent -->
+                <div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
+                
+                <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                    
+                    <!-- Chart / Total Area -->
+                    <div class="w-full md:w-1/2 flex flex-col items-center justify-center relative">
+                        <!-- Abstract Chart Representation -->
+                        <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-[24px] border-surface-variant flex items-center justify-center">
+                            <!-- Simulated segments -->
+                            <div class="absolute inset-[-24px] rounded-full border-[24px] border-primary" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%); transform: rotate(180deg);"></div>
+                            <div class="absolute inset-[-24px] rounded-full border-[24px] border-on-background" style="clip-path: polygon(100% 50%, 100% 100%, 0 100%); transform: rotate(-45deg);"></div>
+                            <div class="absolute inset-[-24px] rounded-full border-[24px] border-tertiary-container" style="clip-path: polygon(0 50%, 50% 100%, 0 100%); transform: rotate(45deg);"></div>
+                            
+                            <div class="text-center z-10 bg-surface-container-lowest p-6 rounded-full shadow-sm">
+                                <p class="font-headline-md text-headline-md text-on-background">Total Anggaran:</p>
+                                <p class="font-headline-lg text-headline-lg text-primary mt-2">Rp 30.800.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Details Area -->
+                    <div class="w-full md:w-1/2 flex flex-col gap-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-16 pt-1 flex items-center justify-end">
+                                <span class="font-headline-md text-headline-md text-primary">70%</span>
+                            </div>
+                            <div class="flex-1 bg-surface rounded-lg p-4 border border-surface-variant relative overflow-hidden">
+                                <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
+                                <h3 class="font-headline-md text-headline-md text-on-background mb-1">Rp 21.500.000</h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant">Puncak Acara Jalan Sehat (Termasuk Doorprize Rp 15 Juta, Konsumsi, &amp; Perlengkapan)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-16 pt-1 flex items-center justify-end">
+                                <span class="font-headline-md text-headline-md text-on-background">18%</span>
+                            </div>
+                            <div class="flex-1 bg-surface rounded-lg p-4 border border-surface-variant relative overflow-hidden">
+                                <div class="absolute left-0 top-0 bottom-0 w-1 bg-on-background"></div>
+                                <h3 class="font-headline-md text-headline-md text-on-background mb-1">Rp 5.500.000</h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant">Hadiah Seluruh Kategori Lomba</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-16 pt-1 flex items-center justify-end">
+                                <span class="font-headline-md text-headline-md text-tertiary-container">6%</span>
+                            </div>
+                            <div class="flex-1 bg-surface rounded-lg p-4 border border-surface-variant relative overflow-hidden">
+                                <div class="absolute left-0 top-0 bottom-0 w-1 bg-tertiary-container"></div>
+                                <h3 class="font-headline-md text-headline-md text-on-background mb-1">Rp 2.000.000</h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant">Perlengkapan &amp; Konsumsi Perlombaan</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-16 pt-1 flex items-center justify-end">
+                                <span class="font-headline-md text-headline-md text-surface-variant">6%</span>
+                            </div>
+                            <div class="flex-1 bg-surface rounded-lg p-4 border border-surface-variant relative overflow-hidden">
+                                <div class="absolute left-0 top-0 bottom-0 w-1 bg-surface-variant"></div>
+                                <h3 class="font-headline-md text-headline-md text-on-background mb-1">Rp 1.800.000</h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant">Persiapan, Dekorasi, &amp; Dana Darurat</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-surface-variant text-center">
+                    <p class="font-body-md text-body-md text-on-surface-variant italic">
+                        *Sebagian besar alokasi dana dirancang untuk dikembalikan kepada warga dalam bentuk apresiasi (hadiah &amp; doorprize) untuk memaksimalkan kebahagiaan bersama.*
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="w-full max-w-5xl px-margin-mobile md:px-margin-desktop mt-section-gap text-center">
+            <div class="flex justify-center mb-8">
+                <span class="material-symbols-outlined text-[80px] text-primary" style="font-variation-settings: 'FILL' 0;">handshake</span>
+            </div>
+            <h2 class="font-headline-xl text-headline-xl text-on-background mb-6 relative inline-block">
+                Mari Wujudkan Bersama
+                <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-primary"></div>
+            </h2>
+            <div class="mt-12 space-y-6">
+                <p class="font-headline-md text-headline-md text-on-surface-variant font-normal">
+                    Mengingat besarnya skala kegiatan ini, keberhasilannya sangat bergantung pada sinergi dan gotong royong kita semua.
+                </p>
+                <p class="font-body-lg text-body-lg text-on-surface-variant">
+                    Kami memohon dukungan dan partisipasi dari Bapak/Ibu/Saudara/i, baik berupa bantuan dana maupun dukungan moril. Kolaborasi Anda adalah kunci kesuksesan peringatan kemerdekaan di lingkungan Blumbang RT 15.
+                </p>
+            </div>
+        </section>
+
+        <!-- Support Channels Section -->
+        <section class="w-full max-w-6xl px-margin-mobile md:px-margin-desktop mt-section-gap mb-section-gap" id="rekening-pembayaran" style="scroll-margin-top: 100px;">
+            <div class="text-center mb-12">
+                <h2 class="font-headline-lg text-headline-lg text-on-background">Salurkan Dukungan Anda</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- WhatsApp Card -->
+                <div class="bg-surface-container-low rounded-xl p-10 flex flex-col items-center text-center relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-primary"></div>
+                    <span class="material-symbols-outlined text-[64px] text-on-background mb-6 group-hover:scale-110 transition-transform">chat</span>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-2">Narahubung Panitia:</p>
+                    <p class="font-headline-xl text-headline-xl text-primary mb-2">0815 4207 2264</p>
+                    <p class="font-body-lg text-body-lg text-on-background">(Sdr. Triyanto)</p>
+                </div>
+
+                <!-- Bank Card -->
+                <div class="bg-surface-container-low rounded-xl p-10 flex flex-col items-center text-center relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-primary"></div>
+                    <span class="material-symbols-outlined text-[64px] text-on-background mb-6 group-hover:scale-110 transition-transform">credit_card</span>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-2">Rekening Pembayaran (BRI):</p>
+                    <p class="font-headline-xl text-headline-xl text-primary mb-2">6882 0102 1390 539</p>
+                    <p class="font-body-lg text-body-lg text-on-background">a.n Triyanto</p>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-on-background text-on-primary py-6 px-8 rounded-lg text-center shadow-sm">
+                <p class="font-body-lg text-body-lg">Teriring doa dan rasa terima kasih atas waktu, perhatian, serta partisipasi Anda. MERDEKA!</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-on-background text-on-primary w-full py-12 flex flex-col items-center justify-center space-y-8 px-margin-mobile md:px-margin-desktop text-center mt-auto">
+        <div class="font-headline-sm text-headline-sm text-primary">
+            HUT RI 81
+        </div>
+        <div class="flex flex-wrap justify-center gap-6">
+            <a href="#" class="font-label-sm text-label-sm text-surface-variant hover:text-primary-fixed-dim underline transition-all duration-300">Kontak Panitia</a>
+            <a href="#" class="font-label-sm text-label-sm text-surface-variant hover:text-primary-fixed-dim underline transition-all duration-300">Dokumentasi</a>
+            </div></footer></body></html>
