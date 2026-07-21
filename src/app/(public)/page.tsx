@@ -30,8 +30,9 @@ export default async function HomePage() {
     announcements = fallbackAnnouncements.slice(0, 3);
   }
 
-  const photoWargaSrc = "/jalan.webp";
-  const photoPanitiaSrc = "/panitia.webp";
+  const flashbackImages = await getFeaturedFlashbackImages();
+  const photoWargaSrc = flashbackImages[0] || "/jalan.webp";
+  const photoPanitiaSrc = flashbackImages[1] || flashbackImages[0] || "/panitia.webp";
 
   return (
     <div className="flex flex-col w-full">
