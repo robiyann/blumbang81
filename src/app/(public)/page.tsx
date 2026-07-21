@@ -31,8 +31,8 @@ export default async function HomePage() {
   }
 
   const flashbackImages = await getFeaturedFlashbackImages();
-  const photoWargaSrc = flashbackImages[0] || "/foto-warga.jpg";
-  const photoPanitiaSrc = flashbackImages[1] || flashbackImages[0] || "/foto-panitia.jpg";
+  const photoWargaSrc = flashbackImages[0] || "/jalan.webp";
+  const photoPanitiaSrc = flashbackImages[1] || "/panitia.webp";
 
   return (
     <div className="flex flex-col w-full">
